@@ -12,8 +12,8 @@ let comidaX = ANCHO_COMIDA;
 let comidaY = ALTO_COMIDA;
 
 function iniciarJuego(){
-graficarGato();
-graficarComida();
+
+graficarRectangulo();
 
 }
 
@@ -27,5 +27,15 @@ function graficarComida(){
 
     ctx.fillStyle="orange";
     ctx.fillRect(450,450,comidaX,comidaY);
+
+}
+
+function graficarRectangulo(){
+    ctx.fillStyle="blue";
+    ctx.fillRect(230,230,gatoX,gatoY);
+
+    ctx.fillStyle="orange";
+    ctx.fillRect(450,450,comidaX,comidaY);
+
 
 }
